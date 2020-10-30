@@ -53,12 +53,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	return true;
-}
+};
 
 uint8_t cur_dance(qk_tap_dance_state_t *state) {
     if (state->count == 3) return CAPS_TAP;
     else return SINGLE_HOLD;
-}
+};
 
 static tap ql_tap_state = {
     .is_press_action = true,
@@ -72,17 +72,17 @@ void ql_finished(qk_tap_dance_state_t *state, void *user_data) {
             layer_on(_FN);
             break;
         case CAPS_TAP:
-          tap_code(KC_CAPS);
+            tap_code(KC_CAPS);
             break;
     }
-}
+};
 
 void ql_reset(qk_tap_dance_state_t *state, void *user_data) {
     if (ql_tap_state.state == SINGLE_HOLD) {
         layer_off(_FN);
     }
     ql_tap_state.state = 0;
-}
+};
 
 qk_tap_dance_action_t tap_dance_actions[] = {
     [CAPS_LAYR] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, ql_finished, ql_reset)
