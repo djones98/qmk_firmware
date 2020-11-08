@@ -3,11 +3,11 @@
 
 #include "config_common.h"
 
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define VENDOR_ID       0xDEED
+#define PRODUCT_ID      0x6969
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Daz
-#define PRODUCT         Keyboard
+#define PRODUCT         Daz Custom 63 Key
 #define DESCRIPTION     Custom 63 Key
 
 #define MATRIX_ROWS 5
