@@ -5,4 +5,3 @@
 #define PRODUCT         Daz Custom 63 Key
 #define DESCRIPTION     Daz Custom 63 Key
 
-#define TAPPING_TERM 175
