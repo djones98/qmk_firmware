@@ -1,0 +1,7 @@
+
+#pragma once
+#define USE_I2C
+#define USB_POLLING_INTERVAL_MS 1
+#define USB_MAX_POWER_CONSUMPTION 500
+#define F_SCL 400000L
+#define FORCE_NKRO
