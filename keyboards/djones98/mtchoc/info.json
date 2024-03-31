@@ -14,7 +14,9 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "backlight": true,
+        "quantum_painter": true
     },
     "matrix_pins": {
         "cols": ["GP28", "GP27", "GP26", "GP16", "GP17", "GP18", "GP19", "GP20", "GP21", "GP22", "GP2", "GP3", "GP4", "GP5"],
@@ -25,7 +27,6 @@
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x0000",
-        "polling_interval": 1,
         "vid": "0xFEED"
     },
     "layouts": {
